@@ -1,4 +1,4 @@
-/*ENUNCIADO 3: 
+/*ENUNCIADO: 
 EN UNA TIENDA DONDE SOLO HAY 10 PRODUCTOS SE DESEA CALCULAR EL TOTAL DE GANANCIA QUE PRODUJO DICHO 
 NEGOCIO ESTE MES. PARA ELLO SE CUENTA POR PRODUCTO CON: PRECIO DEL COSTO, PRECIO DE VENTA, CODIGO Y 
 CANTIDAD VENDIDA EN ESE PERIODO. REALIZAR UN PROGRAMA QUE PERMITA CALCULAR LAS GANANCIAS DE LA TIENDA*/
@@ -64,12 +64,12 @@ int main(){
         
 		case 3:
 			
-			//printf("¿Cuantos productos fueron vendidos este mes?: ");
+			//printf("Â¿Cuantos productos fueron vendidos este mes?: ");
 			//scanf("%i", &cantidad_vendida); 
 			
 			for(i = 0; i <= 9; i++){
 				
-				printf("¿Cuantas unidades del producto (%s) fueron vendidas este mes?: " , nombre_product[i]);
+				printf("Â¿Cuantas unidades del producto (%s) fueron vendidas este mes?: " , nombre_product[i]);
 				scanf("%i", &cantidad_vendidaprod); 
 				
 				ganancias[i] =  (precio_venta[i] - precio_costo[i]) * cantidad_vendidaprod; 
