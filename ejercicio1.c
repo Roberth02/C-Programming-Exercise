@@ -20,14 +20,11 @@ int main(){
         printf("3- Calcular ganancias\n"); 
         printf("4- Salir\n\n");  
 
-        scanf ("%i", &op); 
-        
+        scanf ("%i", &op);
         system("cls");
 
         switch (op){
-
         case 1:
-            
             for(i = 0; i <= 9 ; i++){
 
                 printf("Ingrese el nombre del producto: "); 
@@ -44,10 +41,8 @@ int main(){
 
                 system("cls");
             }	
-            break;
-            
-        case 2:
-        	
+            break;      
+        case 2:	
         	for(i = 0; i <= 9; i++){
         		
         		printf("Producto %i\n\n", i+1);
@@ -59,34 +54,23 @@ int main(){
 			
 			system("pause");
 			system("cls");
-			
             break;
         
 		case 3:
-			
-			//printf("¿Cuantos productos fueron vendidos este mes?: ");
-			//scanf("%i", &cantidad_vendida); 
-			
 			for(i = 0; i <= 9; i++){
 				
 				printf("¿Cuantas unidades del producto (%s) fueron vendidas este mes?: " , nombre_product[i]);
 				scanf("%i", &cantidad_vendidaprod); 
-				
 				ganancias[i] =  (precio_venta[i] - precio_costo[i]) * cantidad_vendidaprod; 
 				
 				printf("\nLa ganancia del producto (%s) es: %.2f \n\n", nombre_product[i], ganancias[i]);
-				
 				total += ganancias[i]; 	
 			}
-			
 			printf("La ganancia total es: %.2f", total); 
-			
             break;
             
         case 4:
-        	
         	exit(-1);
-        	
         	break;
         }
     } while (op >= 1 && op <= 4);
