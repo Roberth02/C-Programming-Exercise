@@ -1,4 +1,4 @@
-/*ENUNCIADO 3: 
+/*ENUNCIADO: 
 Escriba un programa que, tratando una fraccion como una estructura de dos componentes, permita realizar las operaciones de multiplicacion
 y division entre las dos fracciones. El programa debera preguntar la operacion a realizar y despues de datos para ejecutarla, 
 y repetir estos pasos hasta que se seleccione entre las operaciones la opcion terminar */
